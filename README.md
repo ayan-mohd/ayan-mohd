@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Mohd Ayan</h1>
-<h3 align="center">Second year B.tech CSE student at Galgotias University, tryng to explore my passion</h3>
+<h3 align="center">Third year B.tech CSE student at Galgotias University, tryng to explore my passion</h3>
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
