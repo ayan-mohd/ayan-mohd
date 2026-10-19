@@ -1,0 +1,26 @@
+name: Generate Metrics
+
+on:
+  schedule:
+    - cron: "0 0 * * *" # Runs daily
+  workflow_dispatch:
+
+jobs:
+  github-metrics:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: lowlighter/metrics@latest
+        with:
+          # Output file for LeetCode stats
+          filename: metrics.plugin.leetcode.svg
+
+          # GitHub token to access your profile and keep the workflow running
+          token: ${{ secrets.METRICS_TOKEN }}
+
+          # LeetCode plugin config
+          base: ""
+          plugin_leetcode: yes
+          plugin_leetcode_user: ayan_mohd  # 🔁 Replace with your actual LeetCode username
+          plugin_leetcode_sections: solved, skills, recent
+          plugin_leetcode_limit_skills: 10
+          plugin_leetcode_limit_recent: 5
